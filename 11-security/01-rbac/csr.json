@@ -1,0 +1,7 @@
+{
+"CN": "pamir",
+"key": {
+    "algo": "rsa",
+    "size": 4096
+    }
+}

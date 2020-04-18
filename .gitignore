@@ -2,3 +2,5 @@
 **/*.crt
 **/*.key
 **/.vscode
+**/.pem
+**/.csr

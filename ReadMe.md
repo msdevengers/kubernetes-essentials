@@ -21,3 +21,4 @@ https://aksworkshop.io/
   - ClusterFirst
 - WindowsUserNames aka RunAsUserName
 
+ [01-Pods Türkçe Anlatım](https://info.microsoft.com/ME-AzureApp-WBNR-FY20-04Apr-16-ContainersKubernetesandWorkloads-SRDEM17646_LP02OnDemandRegistration-ForminBody.html)

@@ -1,0 +1,18 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  labels:
+    release: prometheus
+  name: postgresql-expoter-prometheus-postgres-exporter
+  namespace: monitoring
+spec:
+  endpoints:
+  - interval: 30s
+    targetPort: http
+  jobLabel: postgresql-expoter-prometheus-postgres-exporter
+  namespaceSelector:
+    matchNames:
+    - monitoring
+  selector:
+    matchLabels:
+      app: prometheus-postgres-exporter

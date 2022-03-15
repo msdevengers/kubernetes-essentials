@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: prometheus-postgres-exporter
+  name: postgresql-expoter-prometheus-postgres-exporter
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 9187
+  selector:
+    app: prometheus-postgres-exporter
+    release: postgresql-expoter
+  sessionAffinity: None
+  type: ClusterIP

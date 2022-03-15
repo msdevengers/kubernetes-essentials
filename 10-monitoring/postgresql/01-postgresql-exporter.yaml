@@ -64,9 +64,5 @@ spec:
           timeoutSeconds: 1
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
-        volumeMounts:
-        - mountPath: /etc/config.yaml
-          name: queries
-          subPath: config.yaml
       dnsPolicy: ClusterFirst
       restartPolicy: Always

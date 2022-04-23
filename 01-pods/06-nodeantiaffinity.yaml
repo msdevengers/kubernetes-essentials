@@ -12,6 +12,8 @@ spec:
       labels:
         app: store
     spec:
+      nodeSelector:
+        kubernetes.io/os: linux
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
